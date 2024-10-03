@@ -22,6 +22,10 @@ bool placemark(){
     int choice;
     cout<<"enter your choice between (1 to 9):";
     cin>>choice;
+
+    if(cin.fail()) { // Check if the input is valid
+        cin.clear(); // Clear the error 
+    }
     int rows = (choice - 1)/3;
     int columns = (choice -1)%3;
       if (choice > 0 && choice < 10) {
