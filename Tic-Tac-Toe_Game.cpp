@@ -141,6 +141,7 @@ do {
         std::cin >> playagain;
 } while (playagain == 'Y' || playagain == 'y');
 
+cout<<"Thanks for playing";
         
     return 0;
     } 
