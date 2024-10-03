@@ -97,16 +97,16 @@ int turns  =0;
 
 //Main game loop
 while(winner ==0 && turns<9){
-cout << currentplayer <<"'s turn"<<endl;
+cout << currentmarker <<"'s turn"<<endl;
 
 if(!placemark()){
     continue;
 }
 displayboard();
 winner =checkwinner();
-if(winner == 0){
+
     swapping();
-}
+
 turns++;
 }
 //to check the result
